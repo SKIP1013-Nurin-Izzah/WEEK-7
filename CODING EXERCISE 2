@@ -1,0 +1,32 @@
+package exercise;
+import java.util.Scanner;
+public class Exercise2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		/*Generate a random number to be guessed
+    int number = (int)(Math.random() * 101);*/
+		
+		int number = (int)(Math.random() *11);
+		int j, i=-1;
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("This is the system to guess number");
+		
+		while (i != number) {
+			System.out.println("Enter any number from 0 to 10: ");
+			j=input.nextInt();
+			
+		if(j==number) {
+			System.out.println("Congratulations! You got correct number");
+		}
+			else if(j<=number) {
+				System.out.println("Sorry your number is too low");
+			}
+				else if(j>=number) {
+					System.out.println("Sorry your number is too high");
+				}
+		}
+		}
+	}
