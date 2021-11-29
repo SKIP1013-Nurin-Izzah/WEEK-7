@@ -1,0 +1,33 @@
+package exercise;
+
+import java.util.Scanner;
+
+public class Exercise3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int password=3456, i=1;
+		
+		Scanner input = new Scanner (System.in);
+		System.out.println("Please enter your password: ");
+		password = input.nextInt();
+		
+		if (password==3456)
+			System.out.println("Welcome To MayBank");
+		
+		else {
+			do {
+			if (password!=3456) {
+				System.out.println("Please re-enter your password: ");
+				password=input.nextInt();
+			}
+			i++;
+			}
+			while (i<3);
+				System.out.println("Invalid card!");
+		}
+		
+	}
+
+}
